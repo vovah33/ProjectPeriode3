@@ -1,3 +1,7 @@
+body {
+    margin: 0; /* Remove default body margin */
+}
+
 #navbar {
     display: flex;
     align-items: center;
@@ -18,19 +22,23 @@
 
 #navbar ul {
     list-style-type: none; /* Remove default list styles */
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
     display: flex; /* Use flexbox for the list */
-    justify-content: space-between; /* Evenly distribute items */
 }
 
 #navbar ul li {
     margin-right: 20px; /* Add spacing between menu items */
 }
 
+#navbar ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
 #navbar ul li a {
     text-decoration: none; /* Remove underline from links */
     font-size: 16px; /* Adjust font size */
+    color: #fff; /* White color for links */
 }
 
 .redc {
@@ -44,3 +52,4 @@
 #navbar ul li a:hover {
     color: #ffd700; /* Change color on hover */
 }
+
