@@ -1,5 +1,7 @@
 body {
     margin: 0; /* Remove default body margin */
+    padding-bottom: 100px; /* Add padding to the bottom of the body to accommodate the footer */
+    position: relative; /* Set position relative for proper positioning of the footer */
 }
 
 #navbar {
@@ -37,19 +39,38 @@ body {
 
 #navbar ul li a {
     text-decoration: none; /* Remove underline from links */
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px; /* Adjust font size */
     color: #fff; /* White color for links */
 }
 
-.redc {
-    color: red;
+#navbar ul li.redc a {
+    color: red; /* Red color for links within list items with class redc */
 }
 
-.bluec {
-    color: mediumturquoise;
+#navbar ul li.bluec a {
+    color: mediumturquoise; /* Blue color for links within list items with class bluec */
 }
 
 #navbar ul li a:hover {
     color: #ffd700; /* Change color on hover */
+}
+
+#footer {
+    background-color: #fff; /* White background color */
+    position: fixed; /* Fixed positioning to keep it at the bottom of the viewport */
+    bottom: 0; /* Align the footer to the bottom */
+    left: 0; /* Align the footer to the left */
+    width: 100%; /* Set width to 100% */
+    padding: 20px; /* Add padding for spacing */
+    display: flex; /* Use flexbox for layout */
+}
+
+#footer div {
+    flex-grow: 1; /* Allow each column to grow equally */
+}
+
+#footer div p {
+    margin: 0; /* Remove default margin from paragraphs */
 }
 
