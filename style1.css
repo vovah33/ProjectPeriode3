@@ -1,0 +1,46 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333; /* Dark background color */
+    padding: 10px 20px; /* Add padding for better spacing */
+}
+
+#logonav img {
+    height: 80px; /* Adjust height of logo */
+    width: auto; /* Let the width adjust automatically */
+}
+
+#logoptions {
+    display: flex; /* Use flexbox for the list */
+    justify-content: center; /* Center the list items */
+}
+
+#navbar ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for the list */
+    justify-content: space-between; /* Evenly distribute items */
+}
+
+#navbar ul li {
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+#navbar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Adjust font size */
+}
+
+.redc {
+    color: red;
+}
+
+.bluec {
+    color: mediumturquoise;
+}
+
+#navbar ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
