@@ -1,0 +1,261 @@
+body {
+    background-color: #1b1b1b;
+    margin: 0; /* Remove default body margin */
+    padding-bottom: 100px; /* Add padding to the bottom of the body to accommodate the footer */
+    position: relative; /* Set position relative for proper positioning of the footer */
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333; /* Dark background color */
+    padding: 10px 20px; /* Add padding for better spacing */
+}
+#logonav img {
+    height: 80px; /* Adjust height of logo */
+    width: auto; /* Let the width adjust automatically */
+}
+#logoptions {
+    display: flex; /* Use flexbox for the list */
+    justify-content: center; /* Center the list items */
+}
+#navbar ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for the list */
+}
+#navbar ul li {
+    margin-right: 20px; /* Add spacing between menu items */
+}
+#navbar ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+#navbar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Adjust font size */
+    color: #fff; /* White color for links */
+}
+#navbar ul li.redc a {
+    color: red; /* Red color for links within list items with class redc */
+}
+#navbar ul li.bluec a {
+    color: mediumturquoise; /* Blue color for links within list items with class bluec */
+}
+#navbar ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+#footer {
+    background-color: #fff; /* White background color */
+    position: fixed; /* Fixed positioning to keep it at the bottom of the viewport */
+    bottom: 0; /* Align the footer to the bottom */
+    left: 0; /* Align the footer to the left */
+    width: 100%; /* Set width to 100% */
+    padding: 20px; /* Add padding for spacing */
+    display: flex; /* Use flexbox for layout */
+}
+#footer div {
+    flex-grow: 1; /* Allow each column to grow equally */
+}
+#footer div p {
+    margin: 0; /* Remove default margin from paragraphs */
+}
+
+.Graphic-Design{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Software-Development{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Product-Design{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Blog-Writing{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Social-Marketing{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.IT-Services{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Graphic-Design:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Software-Development:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Product-Design:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Blog-Writing:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Social-Marketing:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.IT-Services:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Service-Align{
+    color: white;
+    margin-top: 50px;
+    background-color: #1b1b1b;
+    display: flex;
+    margin-left: 270px;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 64%;
+}
+
+.Service-Align2{
+    color: white;
+    background-color: #1b1b1b;
+    margin-top: 10px;
+    display: flex;
+    margin-left: 270px;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 64%;
+}
+
+.Service-Text{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.Service-Paragraaf{
+    width: 200px;
+}
+
+.Service-Text2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.Service-Color{
+    color: mediumturquoise;
+}
+
+.Onze-Service{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Lorem{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.Lorem-Text{
+    width: 700px;
+}
+
+.cred{color: red;}
