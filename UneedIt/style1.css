@@ -5,7 +5,7 @@ body {
     overflow: hidden;
 
 }
-main {
+#mainhome {
     padding-top: 100px; /* Adjust according to your navbar height */
     padding-bottom: 90px; /* Adjust according to your footer height */
     background-image: url("Photos/background2.png");
@@ -17,6 +17,7 @@ main {
     display: flex;
     justify-content: center;
 }
+
 #navbar {
     display: flex;
     align-items: center;
@@ -80,15 +81,17 @@ main {
     width: 450px;
     height: 125px;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 13px;
 
 }
 
 #hometext img {
     width: 300px; /* Adjust the width of the image */
+    margin-top: 7px;
 }
 
 #hometext p {
-    margin-top: 20px; /* Adjust spacing between image and text */
+    margin-top: 15px; /* Adjust spacing between image and text */
 }
 
 .white-text {

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #a3e0e3, #6dc5c7); /* Gradient background */
+}
+
+#mainOverOns {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    min-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ootext {
+    background-color: rgba(51, 51, 51, 0.95);; /* Semi-transparent white background */
+    width: 60%;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    border: 2px solid red;
+}
+
+.ootext p {
+    font-size: 18px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333; /* Set navbar color to #333 */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#logonav img {
+    height: 80px;
+    width: auto;
+}
+
+#logoptions {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin-right: 30px;
+    margin-left: 20px;
+    padding: 0;
+    display: flex;
+}
+
+#navbar ul li {
+    margin-right: 20px;
+}
+
+#navbar ul li:last-child {
+    margin-right: 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+#navbar ul li.redc a {
+    color: red;
+}
+
+#navbar ul li.bluec a {
+    color: mediumturquoise;
+}
+
+#navbar ul li a:hover {
+    color: #ffd700;
+}
+.white-text {
+    color: white; /* Set color of "voor al uw reparaties kunt u terecht bij" to white */
+}
+.red-text {
+    color: red; /* Set color of "-it" to red */
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+    font-weight: bold;
+}
