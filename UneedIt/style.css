@@ -1,0 +1,297 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333; /* Dark background color */
+    padding: 10px 20px; /* Add padding for better spacing */
+    position: fixed;
+    width: 100%;
+    top: 0; /* Align the navbar to the top of the viewport */
+    margin: 0; /* Remove margin */
+}
+
+#logonav img {
+    height: 80px; /* Adjust height of logo */
+    width: auto; /* Let the width adjust automatically */
+}
+
+#logoptions {
+    display: flex; /* Use flexbox for the list */
+    justify-content: center; /* Center the list items */
+}
+
+#navbar ul {
+    list-style-type: none; /* Remove default list styles */
+    margin-right: 30px; /* Add spacing between menu items */
+    margin-left: 20px; /* Shift menu items to the left */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for the list */
+
+}
+
+#navbar ul li {
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+#navbar ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+#navbar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Adjust font size */
+    color: #fff; /* White color for links */
+}
+
+#navbar ul li.redc a {
+    color: red; /* Red color for links within list items with class redc */
+}
+
+#navbar ul li.bluec a {
+    color: mediumturquoise; /* Blue color for links within list items with class bluec */
+}
+
+#navbar ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+#navbar ul li.redc a {
+    color: red; /* Red color for links within list items with class redc */
+}
+
+#navbar ul li.bluec a {
+    color: mediumturquoise; /* Blue color for links within list items with class bluec */
+}
+
+#navbar ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+#logoptions {
+    display: flex; /* Use flexbox for the list */
+    justify-content: center; /* Center the list items */
+}
+.Graphic-Design{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Software-Development{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Product-Design{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Blog-Writing{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Social-Marketing{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.IT-Services{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    transition: 0.2s;
+    width: 300px;
+    height: 170px;
+}
+
+.Graphic-Design:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Software-Development:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Product-Design:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Blog-Writing:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Social-Marketing:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: mediumturquoise;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.IT-Services:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border: solid 2px;
+    border-radius: 7px;
+    border-color: red;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+.Service-Align{
+    color: white;
+    margin-top: 50px;
+    background-color: #1b1b1b;
+    display: flex;
+    margin-left: 270px;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 64%;
+}
+
+.Service-Align2{
+    color: white;
+    background-color: #1b1b1b;
+    margin-top: 10px;
+    display: flex;
+    margin-left: 270px;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 64%;
+}
+
+.Service-Text{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.Service-Paragraaf{
+    width: 200px;
+}
+
+.Service-Text2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.Service-Color{
+    color: mediumturquoise;
+}
+
+.Onze-Service{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Lorem{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.Lorem-Text{
+    width: 700px;
+}
+
+.cred{color: red;}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.faq-container {
+    max-width: 800px;
+    margin: 120px auto 50px; /* Adjust margin to position FAQ container under the navbar */
+    padding: 20px;
+    background-color: #5d5c5c;
+    border: solid 3px;
+    border-color: mediumturquoise;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.question {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.answer {
+    display: none;
+    padding-left: 20px;
+}
+.answer.show {
+    display: block;
+}
