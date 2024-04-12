@@ -4,6 +4,7 @@ body {
     position: relative;
     overflow: hidden;
     background: linear-gradient(to bottom right, #a3e0e3, #6dc5c7); /* Gradient background */
+
 }
 
 #mainOverOns {
@@ -16,12 +17,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url("Photos/uneedi01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
+
 .ootext {
-    background-color: rgba(51, 51, 51, 0.95);; /* Semi-transparent white background */
-    width: 60%;
-    padding: 50px;
+    background-color: rgba(51, 51, 51, 0.95); /* Semi-transparent white background */
+    width: 40%;
+    padding: 20px 40px;
+
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, Helvetica, sans-serif;
@@ -98,6 +105,16 @@ body {
     justify-content: center;
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 35px;
+    margin-top: 45px;
     font-weight: bold;
+    /*margin-left: 10px;*/
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.95);
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-bottom: -10px;
+
+}
+.red-text p {
+    margin: 0px 10px 0px 10px;
 }
