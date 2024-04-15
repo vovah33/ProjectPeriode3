@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Zakelijk</title>
@@ -23,6 +23,8 @@
             <li class="bluec"> <a href="#Reparaties">Reparaties </a> </li>
             <li class="redc"> <a href="#Contacten"> Contacten</a> </li>
             <li class="bluec"> <a href="faq.html">Faq </a> </li>
+            <li class="redc"> <a href="account.php">Account </a> </li>
+
         </ul>
     </div>
 </nav>
@@ -30,9 +32,35 @@
     <div class="block-text">
         <h1>Welkom!</h1>
         <p>We zijn blij om u te kunnen helpen. Hoe kunnen wij assisteren?</p>
-        <button onclick="redirectToHelp()">Ontvang hulp</button>
+        <!-- Call the checkLoginStatus function onclick -->
+
+        <button onclick="checkLoginStatus()">Ontvang hulp</button>
     </div>
 </main>
-<script src="zakelijkscript.js"></script>
+<script>
+    function checkLoginStatus() {
+        // Perform AJAX request to check login status
+        let xhr = new XMLHttpRequest();
+        xhr.open("GET", "checklogstatus.php", true);
+
+        // Define what to do on successful response
+        xhr.onload = function() {
+            if (xhr.status == 200) {
+                // Check the response text
+                if (xhr.responseText.trim() === "logged_in") {
+                    // If user is logged in, redirect to another page for service
+                    window.location.href = "bestellen.html";
+                } else {
+                    // If user is not logged in, redirect to login/signup page
+                    window.location.href = "login_or_signup.php";
+                }
+            }
+        };
+
+        // Send the request
+        xhr.send();
+    }
+
+</script>
 </body>
 </html>

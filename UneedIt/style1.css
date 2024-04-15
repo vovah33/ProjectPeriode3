@@ -5,20 +5,6 @@ body {
     overflow: hidden;
 
 }
-<<<<<<< HEAD
-main {
-    padding-top: 100px; /* Adjust according to your navbar height */
-    padding-bottom: 90px; /* Adjust according to your footer height */
-    background-image: url("Photos/background2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh; /* Ensure minimum height of viewport */
-    overflow-y: auto; /* Allow vertical scrolling for content */
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
-    display: flex;
-    justify-content: center;
-}
-=======
 #mainhome {
     position: relative;
     display: flex;
@@ -33,26 +19,16 @@ main {
     background-position: center;
 }
 
->>>>>>> bf05c6ad82bb919c366d8ca53f823b1e6d95eeda
 #navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
-    background-color: #333; /* Dark background color */
-    padding: 10px 20px; /* Add padding for better spacing */
-    position: fixed;
-    width: 100%;
-}
-
-=======
     background-color: #333;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
     z-index: 1000; /* Set a high z-index to keep the navbar on top */
 }
->>>>>>> bf05c6ad82bb919c366d8ca53f823b1e6d95eeda
 #logonav img {
     height: 80px; /* Adjust height of logo */
     width: auto; /* Let the width adjust automatically */
@@ -100,31 +76,15 @@ main {
 }
 
 #hometext {
-<<<<<<< HEAD
-    text-align: center; /* Center align the content */
-    margin-top: 95px; /* Adjust according to your preference */
-=======
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
->>>>>>> bf05c6ad82bb919c366d8ca53f823b1e6d95eeda
     background-color: rgba(51, 51, 51, 0.95);
     width: 450px;
     height: 125px;
     font-family: Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
-
-}
-
-#hometext img {
-    width: 300px; /* Adjust the width of the image */
-}
-
-#hometext p {
-    margin-top: 20px; /* Adjust spacing between image and text */
-=======
     border-radius: 13px;
 }
 #hometext img {
@@ -135,7 +95,6 @@ main {
 
 #hometext p {
     margin-top: 15px; /* Adjust spacing between image and text */
->>>>>>> bf05c6ad82bb919c366d8ca53f823b1e6d95eeda
 }
 
 .white-text {
@@ -152,19 +111,6 @@ main {
 
 
 #footer {
-<<<<<<< HEAD
-    background-color: #fff; /* White background color */
-    position: fixed; /* Fixed positioning to keep it at the bottom of the viewport */
-    bottom: 0; /* Align the footer to the bottom */
-    left: 0; /* Align the footer to the left */
-    width: 100%; /* Set width to 100% */
-    padding: 20px; /* Add padding for spacing */
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-
-=======
     background-color: #fff;
     position: fixed;
     bottom: 0;
@@ -176,7 +122,6 @@ main {
     align-items: center;
     height: 90px;
     z-index: 999; /* Ensure the footer stays behind the navbar */
->>>>>>> bf05c6ad82bb919c366d8ca53f823b1e6d95eeda
 }
 
 #footer div {

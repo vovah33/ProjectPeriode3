@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Zakelijk</title>
-    <link rel="stylesheet" href="bestellenstyle.css">
+    <title>Over Ons</title>
+    <link rel="stylesheet" href="accountstyle.css">
+
 </head>
 <body>
 <nav id="navbar">
@@ -26,27 +27,11 @@
         </ul>
     </div>
 </nav>
+<main id="mainAccount" >
+    <div class="." >
+        <h1> My account</h1>
+    </div>
 
-<div class="container">
-    <h1>Omschrijf zo duidelijk mogelijk het defect:</h1>
-    <form>
-        <label for="defect">Omschrijving:</label><br>
-        <textarea id="defect" name="defect" rows="6" cols="50" required></textarea><br>
-
-        <label for="machine">Type machine:</label><br>
-        <input type="text" id="machine" name="machine" required><br>
-
-        <label for="garantie">Garantie:</label><br>
-        <select id="garantie" name="garantie" required>
-            <option value="ja">Ja</option>
-            <option value="nee">Nee</option>
-        </select><br>
-
-        <label for="datum">Datum:</label><br>
-        <input type="date" id="datum" name="datum" required><br>
-
-        <input type="submit" value="Verzenden">
-    </form>
-</div>
+</main>
 </body>
 </html>
