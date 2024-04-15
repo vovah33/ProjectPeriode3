@@ -1,37 +1,39 @@
+<!-- In your account.php file -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Over Ons</title>
+    <title>My Account</title>
     <link rel="stylesheet" href="accountstyle.css">
-
 </head>
 <body>
 <nav id="navbar">
-    <div id="logonav" >
-        <a href="home.html">
-            <img src="Photos/cropped-logo%20UNEED-IT.png" >
-        </a>
-    </div>
-    <div id="logoptions">
-        <ul>
-            <li class="redc"> <a href="home.html">Home</a> </li>
-            <li class="bluec"> <a href="OverOns.html">Over ons </a></li>
-            <li class="redc"> <a href="service.html">Service </a></li>
-            <li class="bluec" > <a href="zakelijk.html">Zakelijk </a></li>
-            <li class="redc"> <a href="#Neuws">IT Neuws </a> </li>
-            <li class="bluec"> <a href="#Reparaties">Reparaties </a> </li>
-            <li class="redc"> <a href="#Contacten"> Contacten</a> </li>
-            <li class="bluec"> <a href="faq.html">Faq </a> </li>
-            <li class="redc"> <a href="account.php">Account </a> </li>
-        </ul>
-    </div>
+    <!-- Your navigation bar code here -->
 </nav>
-<main id="mainAccount" >
-    <div class="." >
-        <h1> My account</h1>
+<main id="mainAccount">
+    <div class="account-info">
+        <h1>My Account</h1>
+        <?php
+        session_start();
+        if (isset($_SESSION['user'])) {
+            $user = $_SESSION['user'];
+            echo "<p>Naam: {$user['naam']}</p>";
+            echo "<p>Telefoonnummer: {$user['telefoonnummer']}</p>";
+            echo "<p>Adres: {$user['address']}</p>";
+            echo "<p>Email: {$user['email']}</p>";
+        } else {
+            header("Location: login.html");
+            exit();
+        }
+        ?>
     </div>
-
+    <div class="buttons">
+        <button onclick="window.location.href='change_information.php'">Change Information</button>
+        <!-- Add a form with a logout button -->
+        <form action="logout.php" method="post">
+            <button type="submit" name="logout">Log Out</button>
+        </form>
+    </div>
 </main>
 </body>
 </html>

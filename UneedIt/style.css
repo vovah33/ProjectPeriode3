@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 #navbar {
     display: flex;
     align-items: center;
@@ -295,3 +299,4 @@ body {
 .answer.show {
     display: block;
 }
+
