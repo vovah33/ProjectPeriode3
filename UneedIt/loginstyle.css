@@ -61,36 +61,3 @@ body {
 #navbar ul li a:hover {
     color: #ffd700;
 }
-
-#mainZakelijk {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-}
-
-.block-text {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-h1, p {
-    color: #333;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #555;
-}

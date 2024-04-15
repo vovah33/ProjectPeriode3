@@ -13,12 +13,12 @@ body {
     padding: 10px 20px;
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0; /* Position the navbar at the top */
     z-index: 999;
 }
 
 #logonav img {
-    height: 50px;
+    height: 50px; /* Adjust height of logo */
     width: auto;
 }
 
@@ -62,35 +62,55 @@ body {
     color: #ffd700;
 }
 
-#mainZakelijk {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-}
-
-.block-text {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+.container {
+    width: 60%;
+    margin: 120px auto 50px; /* Adjust margin top to make space for the navbar */
+    background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, p {
-    color: #333;
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+form {
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-button:hover {
-    background-color: #555;
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
