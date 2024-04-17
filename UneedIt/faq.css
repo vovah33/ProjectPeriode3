@@ -159,18 +159,3 @@ body {
         height: 80px;
         width: auto;
     }
-    #mainOverOns {
-        padding-top: 100px;
-        padding-bottom: 90px;
-        min-height: 100vh;
-        overflow-y: auto;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-image: url("Photos/uneedi01.jpg.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
