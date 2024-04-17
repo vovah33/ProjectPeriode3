@@ -13,7 +13,6 @@ if (isset($_SESSION['user'])) {
         $stmt->execute([$userId]);
         $userData = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        // Return user data in JSON format
         echo json_encode($userData);
     } catch (PDOException $e) {
         echo json_encode(['error' => 'Error fetching user information: ' . $e->getMessage()]);

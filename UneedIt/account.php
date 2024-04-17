@@ -77,7 +77,6 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Function to toggle edit mode
         function toggleEdit() {
             var infoBlock = document.querySelector('.info-block');
             var editBlock = document.querySelector('.edit-info');
@@ -98,7 +97,6 @@
             }
         }
 
-        // Function to populate form fields with user data
         function populateForm() {
             var user = <?php echo json_encode($user); ?>;
             document.getElementById('newName').value = user.naam;
@@ -107,7 +105,6 @@
             document.getElementById('newEmail').value = user.email;
         }
 
-        // Function to cancel changes and revert to info mode
         function cancelChanges() {
             var infoBlock = document.querySelector('.info-block');
             var editBlock = document.querySelector('.edit-info');
@@ -117,16 +114,14 @@
             infoBlock.style.display = 'block';
             editBlock.style.display = 'none';
             cancelButton.style.display = 'none';
-            editButton.style.display = 'block'; // Ensure "Edit Information" button is displayed in the middle
+            editButton.style.display = 'block';
         }
 
-        // Event listener for edit button
         var editButton = document.getElementById('editButton');
         editButton.addEventListener('click', function() {
             toggleEdit();
         });
 
-        // Event listener for cancel button
         var cancelButton = document.getElementById('cancelButton');
         cancelButton.addEventListener('click', function() {
             cancelChanges();

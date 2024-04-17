@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Helvetica;
+    font-family: Arial, sans-serif;
 }
 
 #navbar {
@@ -54,42 +54,40 @@ body {
     margin-right: 30px;
 }
 
-#mainZakelijk {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.request {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.block-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+.requests-container {
+    margin-top: 120px;
     padding: 20px;
-    border-radius: 10px;
 }
 
-h1, p {
-    color: #333;
+.user-info {
+    margin-bottom: 20px;
 }
 
-button {
-    background-color: mediumturquoise;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.user-info h2 {
+    margin-bottom: 5px;
 }
 
-button:hover {
-    background-color:#ffd700;
+.user-info p {
+    margin-bottom: 5px;
 }
-.buttons{
+
+.request-info {
+    margin-top: 15px;
+}
+
+.request-info p {
+    margin-bottom: 5px;
+}
+.Klantgegevens{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+}
+.Klantgegevens p {
+    margin-right: 25px;
+    display: flex;
 }

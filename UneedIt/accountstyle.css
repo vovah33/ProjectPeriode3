@@ -55,7 +55,7 @@ body {
 }
 
 #mainAccount {
-    margin-top: 150px; /* Adjust according to your preference */
+    margin-top: 150px;
 }
 
 .account-info {
@@ -71,8 +71,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    max-width: 600px; /* Set maximum width */
-    margin: 0 auto; /* Center the block */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 
@@ -110,7 +110,7 @@ body {
 .button-group {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px; /* Adjust as needed */
+    margin-top: 10px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -135,6 +135,6 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    max-width: 600px; /* Set maximum width */
+    max-width: 600px;
 }
 

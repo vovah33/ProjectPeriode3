@@ -14,15 +14,13 @@ $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
 $address = filter_var(trim($_POST['address']), FILTER_SANITIZE_STRING);
 $password = filter_var(trim($_POST['password']), FILTER_SANITIZE_STRING);
 
-$stmt = $mysql->prepare("INSERT INTO `users` (`naam`, `telefoonnummer`, `email`, `address`, `password`) VALUES (:naam, :telefoonnummer, :email, :address, :password)");
-$stmt->bindParam(':naam', $naam);
+$stmt = $mysql->prepare("INSERT INTO `users` (`naam`, `telefoonnummer`, `email`, `address`, `password`, `role`) VALUES (:naam, :telefoonnummer, :email, :address, :password, 'klant')");$stmt->bindParam(':naam', $naam);
 $stmt->bindParam(':telefoonnummer', $telefoonnummer);
 $stmt->bindParam(':email', $email);
 $stmt->bindParam(':address', $address);
 $stmt->bindParam(':password', $password);
 
 if ($stmt->execute()) {
-    // Отримуємо дані користувача
     $user = [
         'naam' => $naam,
         'telefoonnummer' => $telefoonnummer,

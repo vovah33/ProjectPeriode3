@@ -13,12 +13,12 @@ body {
     padding: 10px 20px;
     position: fixed;
     width: 100%;
-    top: 0; /* Position the navbar at the top */
+    top: 0;
     z-index: 999;
 }
 
 #logonav img {
-    height: 80px; /* Adjust height of logo */
+    height: 80px;
     width: auto;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .container {
     width: 60%;
-    margin: 120px auto 50px; /* Adjust margin top to make space for the navbar */
+    margin: 120px auto 50px;
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;

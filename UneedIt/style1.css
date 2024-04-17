@@ -1,7 +1,7 @@
 body {
-    margin: 0; /* Remove default body margin */
-    padding-bottom: 100px; /* Add padding to the bottom of the body to accommodate the footer */
-    position: relative; /* Set position relative for proper positioning of the footer */
+    margin: 0;
+    padding-bottom: 100px;
+    position: relative;
     overflow: hidden;
 
 }
@@ -27,52 +27,52 @@ body {
     padding: 10px 20px;
     position: fixed;
     width: 100%;
-    z-index: 1000; /* Set a high z-index to keep the navbar on top */
+    z-index: 1000;
 }
 #logonav img {
-    height: 80px; /* Adjust height of logo */
-    width: auto; /* Let the width adjust automatically */
+    height: 80px;
+    width: auto;
 }
 
 #logoptions {
-    display: flex; /* Use flexbox for the list */
-    justify-content: center; /* Center the list items */
+    display: flex;
+    justify-content: center;
 }
 
 #navbar ul {
-    list-style-type: none; /* Remove default list styles */
-    margin-right: 30px; /* Add spacing between menu items */
-    margin-left: 20px; /* Shift menu items to the left */
-    padding: 0; /* Remove padding */
-    display: flex; /* Use flexbox for the list */
+    list-style-type: none;
+    margin-right: 30px;
+    margin-left: 20px;
+    padding: 0;
+    display: flex;
 
 }
 
 #navbar ul li {
-    margin-right: 20px; /* Add spacing between menu items */
+    margin-right: 20px;
 }
 
 #navbar ul li:last-child {
-    margin-right: 0; /* Remove margin from the last item */
+    margin-right: 0;
 }
 
 #navbar ul li a {
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px; /* Adjust font size */
-    color: #fff; /* White color for links */
+    font-size: 16px;
+    color: #fff;
 }
 
 #navbar ul li.redc a {
-    color: red; /* Red color for links within list items with class redc */
+    color: red;
 }
 
 #navbar ul li.bluec a {
-    color: mediumturquoise; /* Blue color for links within list items with class bluec */
+    color: mediumturquoise;
 }
 
 #navbar ul li a:hover {
-    color: #ffd700; /* Change color on hover */
+    color: #ffd700;
 }
 
 #hometext {
@@ -88,25 +88,25 @@ body {
     border-radius: 13px;
 }
 #hometext img {
-    width: 300px; /* Adjust the width of the image */
+    width: 300px;
     margin-top: 7px;
 
 }
 
 #hometext p {
-    margin-top: 15px; /* Adjust spacing between image and text */
+    margin-top: 15px;
 }
 
 .white-text {
-    color: white; /* Set color of "voor al uw reparaties kunt u terecht bij" to white */
+    color: white;
 }
 
 .blue-text {
-    color: mediumturquoise; /* Set color of "Uneed-" to blue */
+    color: mediumturquoise;
 }
 
 .red-text {
-    color: red; /* Set color of "-it" to red */
+    color: red;
 }
 
 
@@ -121,15 +121,15 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 90px;
-    z-index: 999; /* Ensure the footer stays behind the navbar */
+    z-index: 999;
 }
 
 #footer div {
-    flex-grow: 1; /* Allow each column to grow equally */
+    flex-grow: 1;
 }
 
 #footer div p {
-    margin: 0; /* Remove default margin from paragraphs */
+    margin: 0;
 }
 #telefoonnnumer {
     flex-grow: 1;

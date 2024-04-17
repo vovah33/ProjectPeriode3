@@ -14,11 +14,21 @@ if (!$mysql) {
     die("Verbindingsfout: " . $mysql->errorInfo()[2]);
 }
 
-// Отримуємо дані з форми
+
 $defect = $_POST['defect'];
 $machine = $_POST['machine'];
 $garantie = $_POST['garantie'];
 $datum = $_POST['datum'];
+
+
+$stmt_check_user = $mysql->prepare("SELECT * FROM users WHERE id = ?");
+$stmt_check_user->execute([$idvanklant]);
+$user_exists = $stmt_check_user->fetch(PDO::FETCH_ASSOC);
+
+if (!$user_exists) {
+    echo "Fout: De gebruiker van idvanklant = $idvanklant bestaat niet in de gebruikerstabel.";
+    exit();
+}
 
 $photo_path = "";
 if(isset($_FILES['photo']) && $_FILES['photo']['error'] == UPLOAD_ERR_OK) {

@@ -25,15 +25,19 @@ if (!$user) {
     exit();
 }
 
-
-$idvanklant = $user['idvanklant'];
+$idvanklant = $user['id'];
 
 $_SESSION['idvanklant'] = $idvanklant;
 
 $_SESSION['user'] = $user;
 
-setcookie('user', session_id(), time() + (86400 * 30 * 5), "/"); // 86400 sec is 1 dag
+if ($user['role'] === 'admin') {
+    $_SESSION['is_admin'] = true;
+}
 
-header("Location: bestellen.html");
+setcookie('user', session_id(), time() + (86400 * 30 * 5), "/"); // 86400 sec - 1 dag
+
+
+header("Location: home.html");
 exit();
 ?>
