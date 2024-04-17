@@ -1,8 +1,7 @@
 body {
     margin: 0;
-    padding-bottom: 100px;
-    position: relative;
-    overflow: hidden;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 #navbar {
@@ -14,50 +13,128 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
 }
 
 #logonav img {
-    height: 50px;
-    width: auto;
+    height: 80px;
 }
 
-#logoptions {
-    display: flex;
-    justify-content: center;
-}
-
-#navbar ul {
+#logoptions ul {
     list-style-type: none;
-    margin-right: 30px;
-    margin-left: 20px;
+    margin: 0;
     padding: 0;
     display: flex;
 }
 
-#navbar ul li {
+#logoptions ul li {
     margin-right: 20px;
 }
 
-#navbar ul li:last-child {
-    margin-right: 0;
-}
-
-#navbar ul li a {
+#logoptions ul li a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #fff;
 }
 
-#navbar ul li.redc a {
+#logoptions ul li.redc a {
     color: red;
 }
 
-#navbar ul li.bluec a {
+#logoptions ul li.bluec a {
     color: mediumturquoise;
 }
 
-#navbar ul li a:hover {
+#logoptions ul li a:hover {
     color: #ffd700;
 }
+
+#logoptions ul li:last-child {
+    margin-right: 30px;
+}
+
+#mainAccount {
+    margin-top: 150px; /* Adjust according to your preference */
+}
+
+.account-info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-block {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px; /* Set maximum width */
+    margin: 0 auto; /* Center the block */
+}
+
+
+.info-block p {
+    margin: 10px 0;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+.changeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Adjust as needed */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.button-group button:hover {
+    opacity: 0.8;
+}
+.edit-info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px; /* Set maximum width */
+}
+

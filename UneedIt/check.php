@@ -1,38 +1,42 @@
 <?php
 session_start();
 
-if (!isset($_POST['Naam']) || !isset($_POST['password']) || !isset($_POST['email'])) {
-    echo "Geen naam, wachtwoord of e-mailadres ingevoerd";
+if (empty($_POST['naam']) || empty($_POST['telefoonnummer']) || empty($_POST['email']) || empty($_POST['address']) || empty($_POST['password'])) {
+    echo "Vul alstublieft alle velden in";
     exit();
 }
 
-// Connect to the database
 $mysql = new PDO('mysql:host=localhost;dbname=uneedit', 'root', '');
 
-// Filter and sanitize the input
-$naam = filter_var(trim($_POST['Naam']), FILTER_SANITIZE_STRING);
+$naam = filter_var(trim($_POST['naam']), FILTER_SANITIZE_STRING);
+$telefoonnummer = filter_var(trim($_POST['telefoonnummer']), FILTER_SANITIZE_STRING);
 $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
+$address = filter_var(trim($_POST['address']), FILTER_SANITIZE_STRING);
 $password = filter_var(trim($_POST['password']), FILTER_SANITIZE_STRING);
 
-// Prepare and execute the database query
-$stmt = $mysql->prepare("SELECT * FROM `users` WHERE `naam` = :naam AND `email` = :email AND `password` = :password");
+$stmt = $mysql->prepare("INSERT INTO `users` (`naam`, `telefoonnummer`, `email`, `address`, `password`) VALUES (:naam, :telefoonnummer, :email, :address, :password)");
 $stmt->bindParam(':naam', $naam);
+$stmt->bindParam(':telefoonnummer', $telefoonnummer);
 $stmt->bindParam(':email', $email);
+$stmt->bindParam(':address', $address);
 $stmt->bindParam(':password', $password);
-$stmt->execute();
 
-// Fetch the user data
-$user = $stmt->fetch(PDO::FETCH_ASSOC);
+if ($stmt->execute()) {
+    // Отримуємо дані користувача
+    $user = [
+        'naam' => $naam,
+        'telefoonnummer' => $telefoonnummer,
+        'email' => $email,
+        'address' => $address,
+        'password' => $password
+    ];
 
-if (!$user) {
-    echo "Onjuiste gebruikersnaam of wachtwoord";
+    $_SESSION['user'] = $user;
+
+    header("Location: home.html");
+    exit();
+} else {
+    echo "Fout bij gebruikersregistratie";
     exit();
 }
-
-// Store user information in session
-$_SESSION['user'] = $user;
-
-// Redirect to the home page
-header("Location: home.html");
-exit();
 ?>

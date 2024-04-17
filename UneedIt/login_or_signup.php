@@ -5,11 +5,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Login or Sign Up</title>
-    <!-- Add your CSS styles here -->
+    <link rel="stylesheet" href="loginstyle.css">
 </head>
 <body>
+<div class="container">
+<nav id="navbar">
+    <div id="logonav" >
+        <a href="home.html">
+            <img src="Photos/cropped-logo%20UNEED-IT.png" >
+        </a>
+    </div>
+    <div id="logoptions">
+        <ul>
+            <li class="redc"> <a href="home.html">Home</a> </li>
+            <li class="bluec"> <a href="OverOns.html">Over ons </a></li>
+            <li class="redc"> <a href="service.html">Service </a></li>
+            <li class="bluec" > <a href="zakelijk.html">Zakelijk </a></li>
+            <li class="redc"> <a href="#Neuws">IT Neuws </a> </li>
+            <li class="bluec"> <a href="#Reparaties">Reparaties </a> </li>
+            <li class="redc"> <a href="#Contacten"> Contacten</a> </li>
+            <li class="bluec"> <a href="faq.html">Faq </a> </li>
+            <li class="redc"> <a href="account.php">Account </a> </li>
+        </ul>
+    </div>
+</nav>
+<div class="login-signup">
 <h1>It seems you are not logged in</h1>
 <button onclick="window.location.href='login.html'">Log In</button>
 <button onclick="window.location.href='registration.html'">Sign Up</button>
+</div>
+</div>
 </body>
 </html>

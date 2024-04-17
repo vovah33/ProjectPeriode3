@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="faq.css">
     <script src="faq.js"></script>
 
 
 </head>
+<div id="logonav" >
+    <a href="home.html">
+        <img src="Photos/cropped-logo%20UNEED-IT(notext).png-IT.png" >
+    </a>
+</div>
+
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
 <body class="background-image">
+
 
 <nav id="navbar">
     <div id="logonav" >
@@ -22,12 +34,18 @@
             <li class="redc"> <a href="home.html">Home</a> </li>
             <li class="bluec"> <a href="OverOns.html">Over ons </a></li>
             <li class="redc"> <a href="service.html">Service </a></li>
-            <li class="bluec" > <a href="#Zakelijk">Zakelijk </a></li>
+            <li class="bluec" > <a href="zakelijk.html">Zakelijk </a></li>
+
+            <li class="redc"> <a href="#News">IT Neuws </a> </li>
+
             <li class="redc"> <a href="#Neuws">IT Neuws </a> </li>
+
             <li class="bluec"> <a href="#Reparaties">Reparaties </a> </li>
-            <li class="redc"> <a href="#Contacten"> Contacten</a> </li>
+            <li class="redc"> <a href="contacten.html"> Contacten</a> </li>
             <li class="bluec"> <a href="faq.html">Faq </a> </li>
-            <li class="redc"> <a href="account.php">Accaunt </a> </li>
+            <li class="redc"> <a href="account.php">Account </a> </li>
+            <li class="bluec"><a href="bezorgdientsen.html"> bezorg informatie </a></li>
+            <li class="redc"><a href="bestellen.html"> bestellen </a></li>
         </ul>
     </div>
 </nav>
@@ -62,19 +80,34 @@
     <div class="answer" id="answer6">
         Yes, Lorem Ipsum is safe to use and has been used as placeholder text in the printing and typesetting industry for centuries.
     </div>
+    <footer id="footer">
+        <div id="adress">
+            <img src="Photos/location.png">
+            <p>ZUIDBAAN 514, 2841MD</p>
+            <p> MOORDRECHT</p>
+        </div>
+        <div id="telefoonnnumer">
+            <img src="Photos/phone.png">
+            <p>+316 30 985 409 SERVICENUMMER</p>
+            <p>+3118 28 202 18 KANTOOR </p>
+            <p> BEREIKBAAR VAN 09:00-18:00</p>
+        </div>
+        <div id="tijd">
+            <img src="Photos/clock.png">
+            <p>MA T/M VRIJ, 09:00 - 23:00</p>
+            <p>TELEFONISCH BEREIKBAAR</p>
+            <p>VOOR ABONNEMENTHOUDERS</p>
+        </div>
 </div>
 
-<!-- Form for submitting new questions -->
-<div class="faq-container">
-    <div class="question" onclick="toggleAnswer('new')">Submit a Question</div>
-    <div class="answer" id="new" style="display: none;">
-        <form id="questionForm" onsubmit="submitQuestion(event)">
-            <label for="newQuestion">Your Question:</label><br>
-            <textarea id="newQuestion" name="newQuestion" rows="4" cols="50" required></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-</div>
+
+
+
+
+
+
+
+
 
 
 
