@@ -1,49 +1,38 @@
 <?php
-$naam = filter_var(trim($_POST['naam']), FILTER_SANITIZE_STRING);
-$password = filter_var(trim($_POST['password']), FILTER_SANITIZE_STRING);
+session_start();
+
+if (!isset($_POST['Naam']) || !isset($_POST['password']) || !isset($_POST['email'])) {
+    echo "Geen naam, wachtwoord of e-mailadres ingevoerd";
+    exit();
+}
+
+// Connect to the database
+$mysql = new PDO('mysql:host=localhost;dbname=uneedit', 'root', '');
+
+// Filter and sanitize the input
+$naam = filter_var(trim($_POST['Naam']), FILTER_SANITIZE_STRING);
 $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
+$password = filter_var(trim($_POST['password']), FILTER_SANITIZE_STRING);
 
+// Prepare and execute the database query
+$stmt = $mysql->prepare("SELECT * FROM `users` WHERE `naam` = :naam AND `email` = :email AND `password` = :password");
+$stmt->bindParam(':naam', $naam);
+$stmt->bindParam(':email', $email);
+$stmt->bindParam(':password', $password);
+$stmt->execute();
 
-if (!isset($_POST['naam']) || !isset($_POST['password']) || !isset($_POST['email'])) {
-    echo "Voer uw registratiegegevens in";
+// Fetch the user data
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$user) {
+    echo "Onjuiste gebruikersnaam of wachtwoord";
     exit();
 }
 
-// Перевірка довжини логіна, паролю та електронної пошти
-if (mb_strlen($login) < 5 || mb_strlen($login) > 90) {
-    echo "Недопустима довжина логіна (від 5 до 90 символів)";
-    exit();
-} elseif (mb_strlen($password) < 4 || mb_strlen($password) > 15) {
-    echo "Недопустима довжина паролю (від 4 до 15 символів)";
-    exit();
-} elseif (mb_strlen($email) < 8 || mb_strlen($email) > 90) {
-    echo "Недопустима довжина електронної пошти (від 8 до 90 символів)";
-    exit();
-}
+// Store user information in session
+$_SESSION['user'] = $user;
 
-// Хешування паролю
-$password = md5($password."shdvpiejuanvpfaivn212389549032");
-
-try {
-    // Підключення до бази даних
-    $mysql = new PDO('mysql:host=localhost;dbname=uneedit', 'root', '');
-    $mysql->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    // Підготовка та виконання запиту для додавання користувача
-    $stmt = $mysql->prepare("INSERT INTO `users` (`naam`, `password`, `email`) VALUES (:login, :password, :email)");
-    $stmt->bindParam(':login', $login);
-    $stmt->bindParam(':password', $password);
-    $stmt->bindParam(':email', $email);
-    $stmt->execute();
-
-    // Виведення підтвердження успішної реєстрації
-    echo "Реєстрація успішна!";
-} catch (PDOException $e) {
-    // Виведення помилки у разі виникнення виключення
-    echo "Помилка: " . $e->getMessage();
-    exit(); // Вихід з програми у разі помилки
-}
-
-// Перенаправлення на головну сторінку
-header('Location:home.html');
+// Redirect to the home page
+header("Location: home.html");
+exit();
 ?>
