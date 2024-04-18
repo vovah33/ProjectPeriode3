@@ -18,9 +18,6 @@
             <li class="bluec"> <a href="OverOns.html">Over ons </a></li>
             <li class="redc"> <a href="service.html">Service </a></li>
             <li class="bluec"> <a href="zakelijk.html">Zakelijk </a></li>
-            <li class="redc"> <a href="#Neuws">IT Neuws </a> </li>
-            <li class="bluec"> <a href="#Reparaties">Reparaties </a> </li>
-            <li class="redc"> <a href="#Contacten"> Contacten</a> </li>
             <li class="bluec"> <a href="faq.html">Faq </a> </li>
             <li class="redc"> <a href="account.php">Account </a> </li>
         </ul>
@@ -59,7 +56,7 @@
                 <input type="text" id="newEmail" name="newEmail" value="<?php echo $user['email']; ?>"><br>
 
                 <div class="button-group">
-                    <button type="submit" style="background-color: mediumturquoise;">Save Changes</button>
+                    <button type="submit" style="background-color: mediumturquoise;">Wijzigingen opslaan</button>
                     <button type="button" onclick="cancelChanges()" id="cancelButton" style="background-color: red;">Cancel Changes</button>
                 </div>
             </form>
@@ -67,7 +64,7 @@
     </div>
 
     <div class="buttons">
-        <button id="editButton">Edit Information</button>
+        <button id="editButton">Informatie bewerken</button>
 
         <form action="logout.php" method="post">
             <button type="submit" name="logout">Log Out</button>

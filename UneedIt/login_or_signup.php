@@ -18,9 +18,6 @@
             <li class="bluec"> <a href="OverOns.html">Over ons </a></li>
             <li class="redc"> <a href="service.html">Service </a></li>
             <li class="bluec"> <a href="zakelijk.html">Zakelijk </a></li>
-            <li class="redc"> <a href="#Neuws">IT Neuws </a> </li>
-            <li class="bluec"> <a href="#Reparaties">Reparaties </a> </li>
-            <li class="redc"> <a href="#Contacten"> Contacten</a> </li>
             <li class="bluec"> <a href="faq.html">Faq </a> </li>
             <li class="redc"> <a href="account.php">Account </a> </li>
         </ul>
@@ -28,7 +25,7 @@
 </nav>
 <div class="container">
     <div class="login-signup">
-        <h1>It seems you are not logged in</h1>
+        <h1>Het lijkt erop dat ze niet ingelogd zijn</h1>
         <button onclick="window.location.href='login.html'">Log In</button>
         <button onclick="window.location.href='registration.html'">Sign Up</button>
     </div>

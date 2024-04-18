@@ -1,3 +1,4 @@
+[13:23] gianni Pereira Monteiro
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +7,12 @@
     <title>FAQ</title>
     <link rel="stylesheet" href="style.css">
 
-
 </head>
 <body>
-
 <nav id="navbar">
-    <div id="logonav" >
+    <div id="logonav">
         <a href="home.html">
-            <img src="Photos/cropped-logo%20UNEED-IT.png" >
+            <img src="Photos/cropped-logo%20UNEED-IT.png">
         </a>
     </div>
     <div id="logoptions">
@@ -21,50 +20,39 @@
             <li class="redc"> <a href="home.html">Home</a> </li>
             <li class="bluec"> <a href="OverOns.html">Over ons </a></li>
             <li class="redc"> <a href="service.html">Service </a></li>
-            <li class="bluec" > <a href="zakelijk.html">Zakelijk </a></li>
-            <li class="redc"> <a href="contacten.html"> Contacten</a> </li>
+            <li class="bluec"> <a href="zakelijk.html">Zakelijk </a></li>
             <li class="bluec"> <a href="faq.html">Faq </a> </li>
             <li class="redc"> <a href="account.php">Account </a> </li>
-            <li class="bluec"><a href="bestellen.html"> bestellen </a> </li>
-            <li class="redc"><a href="bezorgdientsen.html"> bezorgdiensten </a></li>
         </ul>
     </div>
 </nav>
-
-
 
 <div class="faq-container">
     <div class="question" onclick="toggleAnswer(1)">What is Lorem Ipsum?</div>
     <div class="answer" id="answer1">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
     </div>
-
     <div class="question" onclick="toggleAnswer(2)">Why do we use it?</div>
     <div class="answer" id="answer2">
         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
     </div>
-
     <div class="question" onclick="toggleAnswer(3)">Where does it come from?</div>
     <div class="answer" id="answer3">
         Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
     </div>
-
     <div class="question" onclick="toggleAnswer(4)">Is it safe to use Lorem Ipsum?</div>
     <div class="answer" id="answer4">
         Yes, Lorem Ipsum is safe to use and has been used as placeholder text in the printing and typesetting industry for centuries.
     </div>
-
     <div class="question" onclick="toggleAnswer(5)">Is it safe to use Lorem Ipsum?</div>
     <div class="answer" id="answer5">
         Yes, Lorem Ipsum is safe to use and has been used as placeholder text in the printing and typesetting industry for centuries.
     </div>
-
     <div class="question" onclick="toggleAnswer(6)">Is it safe to use Lorem Ipsum?</div>
     <div class="answer" id="answer6">
         Yes, Lorem Ipsum is safe to use and has been used as placeholder text in the printing and typesetting industry for centuries.
     </div>
 </div>
-
 <script>
     function toggleAnswer(id) {
         var answer = document.getElementById('answer' + id);
